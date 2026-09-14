@@ -55,6 +55,7 @@
   }
   small {
     font-size: 80%;
+    font-weight: inherit;
   }
   sub, sup {
     font-size: 75%;
