@@ -1,7 +1,7 @@
 import { name } from "ejs";
 import mongoose from "mongoose";
 
-const userSchema = new mongoose.Schema({
+const usersSchema = new mongoose.Schema({
   name: { type: String, require: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, require: true },
@@ -11,5 +11,5 @@ const userSchema = new mongoose.Schema({
   updatedAt: { type: Date, default: Date.now },
 });
 
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model("User", usersSchema);
 export default User;
